@@ -57,9 +57,13 @@ var showCurrentTime = function () {
     var seconds= currentTime.getSeconds();
     var merindian = " AM";
 
-    if (hours > 12) {
+    if (hours >= 12) {
+
         merindian = " PM"
-        hours = hours -12;
+    }
+
+    if (hours >12) {
+    hours = hours -12;
     }
 
     if (minutes < 10) {
