@@ -59,8 +59,6 @@ var showCurrentTime = function () {
 
     if (hours > 12) {
         merindian = " PM"
-    }
-    if (hours < 12) {
         hours = hours -12;
     }
 
